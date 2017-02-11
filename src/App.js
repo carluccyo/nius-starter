@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 
-import Header from './commn/components/header/Header';
+import Header from './common/components/header/Header';
 import Footer from './common/components/footer';
 import Jumbotron from './common/components/jumbotron';
 
