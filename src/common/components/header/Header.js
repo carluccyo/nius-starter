@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 
+import { Link } from 'react-router'
+
 class Header extends React.Component {
 
   state = {
@@ -27,7 +29,10 @@ class Header extends React.Component {
                       <li className="current"><a href="#home">Home</a></li>
                       <li className=""><a href="#focus">Focus</a></li>
                       <li className=""><a href="#works">Works</a></li>
-                      <li className=""><a href="#aboutus">About Us</a></li>
+
+                      <li className=""><Link to="/about">About</Link></li>
+                      <li className=""><Link to="/repos">Repos</Link></li>
+                      
                       <li className=""><a href="#team">Team</a></li>
                       <li><a href="#pricingtable">Pricing</a></li>
                       <li><a href="#features">Features</a></li>

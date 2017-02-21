@@ -23,7 +23,10 @@ class App extends Component {
           </p>
           <Jumbotron />
 
+          {this.props.children}
+
           <Footer />
+
 
       </div>
 
