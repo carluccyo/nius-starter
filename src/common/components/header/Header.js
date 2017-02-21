@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 
-import { Link } from 'react-router'
+import { NavLink, Link, IndexLink } from 'react-router'
 
 class Header extends React.Component {
 
@@ -27,14 +27,15 @@ class Header extends React.Component {
               <nav className="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse" aria-expanded="false" >
                   <ul className="nav navbar-nav navbar-right responsive-nav main-nav-list">
 
-                      <li className="current"><a href="#home">Home</a></li>
+                      <li><Link to="/" activeClassName="active" onlyActiveOnIndex={true}>Home Link</Link></li>
+                      <li><IndexLink to="/" activeClassName="active">Home IndexLink</IndexLink></li>
 
                       <li className=""><a href="#focus">Focus</a></li>
                       <li className=""><a href="#works">Works</a></li>
 
                       <li className=""><Link to="/about">About</Link></li>
                       <li className=""><Link to="/repos">Repos</Link></li>
-                      
+
 
                   </ul>
               </nav>
