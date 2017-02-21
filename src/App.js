@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Router, Route, hashHistory } from 'react-router'
 
 import './App.css';
 
@@ -15,7 +14,7 @@ class App extends Component {
     return (
 
       <div className="App container-fluid">
-
+          
           <Header />
 
           <p className="App-intro">
@@ -23,10 +22,7 @@ class App extends Component {
           </p>
           <Jumbotron />
 
-          {this.props.children}
-
           <Footer />
-
 
       </div>
 
