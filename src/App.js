@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Router, Route, hashHistory } from 'react-router'
 
 import './App.css';
 
