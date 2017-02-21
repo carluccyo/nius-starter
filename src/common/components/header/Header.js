@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 
-import { NavLink, Link, IndexLink } from 'react-router'
+import { Link, IndexLink } from 'react-router'
 
 class Header extends React.Component {
 
