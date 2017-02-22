@@ -11,36 +11,38 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div id="main-nav" className="navbar bs-docs-nav fixed" role="banner">
+      <nav className="navbar navbar-inverse navbar-fixed-top">
           <div className="container">
-              <div className="navbar-header responsive-logo">
-                  <button className="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+              <div className="navbar-header">
+                  <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                       <span className="sr-only">Toggle navigation</span>
                       <span className="icon-bar"></span>
                       <span className="icon-bar"></span>
                       <span className="icon-bar"></span>
                   </button>
-                  <div className="navbar-brand">
-                      {/* <img src="images/logo.png" alt="Zerif" /> */}
-                  </div>
+                  <a className="navbar-brand" href="#">Bootstrap theme</a>
               </div>
-              <nav className="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse" aria-expanded="false" >
-                  <ul className="nav navbar-nav navbar-right responsive-nav main-nav-list">
-
-                      <li><Link to="/" activeClassName="active" onlyActiveOnIndex={true}>Home Link</Link></li>
-                      <li><IndexLink to="/" activeClassName="active">Home IndexLink</IndexLink></li>
-
-                      <li className=""><a href="#focus">Focus</a></li>
-                      <li className=""><a href="#works">Works</a></li>
-
-                      <li className=""><Link to="/about">About</Link></li>
-                      <li className=""><Link to="/repos">Repos</Link></li>
-
-
+              <div id="navbar" className="navbar-collapse collapse">
+                  <ul className="nav navbar-nav">
+                      <li className="active"><a href="#">Home</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <li className="dropdown">
+                          <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span className="caret"></span></a>
+                          <ul className="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li role="separator" className="divider"></li>
+                              <li className="dropdown-header">Nav header</li>
+                              <li><a href="#">Separated link</a></li>
+                              <li><a href="#">One more separated link</a></li>
+                          </ul>
+                      </li>
                   </ul>
-              </nav>
+              </div>
           </div>
-      </div>
+      </nav>
       );
     }
 }
