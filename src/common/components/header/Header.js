@@ -13,7 +13,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <nav className="navbar navbar-default navbar-static-top">
+      <nav className="navbar navbar-default blu-navbar navbar-static-top">
           <div className="container">
               <div className="navbar-header">
                   <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -26,7 +26,7 @@ class Header extends React.Component {
               </div>
               <div id="navbar" className="navbar-collapse collapse" aria-expanded="false">
                   <ul className="nav navbar-nav">
-                      <li className="active"><a href="#">Home</a></li>
+                      <li><a href="#">Home</a></li>
                       <li><a href="#about">About</a></li>
                       <li><a href="#contact">Contact</a></li>
                       <li className="dropdown">
@@ -44,7 +44,7 @@ class Header extends React.Component {
                   </ul>
                   <ul className="nav navbar-nav navbar-right">
                       <li><a href="../navbar/">Default</a></li>
-                      <li className="active"><a href="./">Static top <span className="sr-only">(current)</span></a></li>
+                      <li><a href="./">Static top <span className="sr-only">(current)</span></a></li>
                       <li><a href="../navbar-fixed-top/">Fixed top</a></li>
                   </ul>
               </div>
