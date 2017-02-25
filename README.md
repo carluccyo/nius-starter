@@ -2,18 +2,18 @@
 
 Sometimes you want to have a subdirectory on the `master` branch be the root directory of a repository’s `gh-pages` branch. This is useful for things like sites developed with [Yeoman](http://yeoman.io), or if you have a Jekyll site contained in the `master` branch alongside the rest of your code.
 
-For the sake of this example, let’s pretend the subfolder containing your site is named `dist`.
+For the sake of this example, let’s pretend the subfolder containing your site is named `build`.
 
 ### Step 1
 
-Remove the `dist` directory from the project’s `.gitignore` file (it’s ignored by default by Yeoman).
+Remove the `build` directory from the project’s `.gitignore` file (it’s ignored by default by Yeoman).
 
 ### Step 2
 
 Make sure git knows about your subtree (the subfolder with your site).
 
 ```sh
-git add dist && git commit -m "Initial dist subtree commit"
+git add build && git commit -m "Initial build subtree commit"
 ```
 
 ### Step 3
@@ -21,10 +21,10 @@ git add dist && git commit -m "Initial dist subtree commit"
 Use subtree push to send it to the `gh-pages` branch on GitHub.
 
 ```sh
-git subtree push --prefix dist origin gh-pages
+git subtree push --prefix build origin gh-pages
 ```
 
-Boom. If your folder isn’t called `dist`, then you’ll need to change that in each of the commands above.
+Boom. If your folder isn’t called `build`, then you’ll need to change that in each of the commands above.
 
 ---
 
