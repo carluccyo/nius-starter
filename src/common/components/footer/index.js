@@ -1,1 +1,1 @@
-exports = module.exports = require('./Footer');
+exports = module.exports = require('./footer');
