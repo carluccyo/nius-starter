@@ -17,8 +17,8 @@ class App extends Component {
 
           <Header />
 
-          <Jumbotron />
-          <Jumbotron />
+          {/*<Jumbotron />
+          <Jumbotron />*/}
           
           {/* add this */}
           {this.props.children}

@@ -10,6 +10,8 @@ import About from './common/routes/About';
 import Repos from './common/routes/Repos';
 import Repo from './common/routes/Repo';
 
+import Dashboard from './common/routes/Dashboard';
+
 // ReactDOM.render(
 //   <App />,
 //   document.getElementById('root')
@@ -25,6 +27,7 @@ ReactDOM.render((
               <Route path="/repos/:userName/:repoName" component={Repo}/>
           </Route>
           <Route path="/about" component={About}/>
+          <Route path="/dashboard" component={Dashboard}/>
       </Route>
   </Router>
 ),
