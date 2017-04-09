@@ -23,7 +23,7 @@ function getClientEnvironment(publicUrl) {
       'PUBLIC_URL': JSON.stringify(publicUrl),
       
       // to change <meta> in index.html
-      'OG_TITLE': 'OG_TITLE_VALUE'
+      // 'OG_TITLE': 'OG_TITLE_VALUE'
     });
   return {'process.env': processEnv};
 }
